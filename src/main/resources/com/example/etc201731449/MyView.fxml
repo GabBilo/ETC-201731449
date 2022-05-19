@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -106,7 +107,7 @@
             <VBox prefHeight="160.0" prefWidth="154.0">
                <children>
                   <Label text="Inclu(s)" />
-                  <TextField prefHeight="130.0" prefWidth="130.0" />
+                  <ListView fx:id="inclus" prefHeight="200.0" prefWidth="200.0" />
                </children></VBox>
             <VBox alignment="CENTER" prefHeight="160.0" prefWidth="154.0" spacing="5.0">
                <children>
@@ -116,7 +117,7 @@
             <VBox prefHeight="200.0" prefWidth="154.0">
                <children>
                   <Label text="Exclus(s)" />
-                  <TextField prefHeight="130.0" prefWidth="130.0" />
+                  <ListView fx:id="exclus" prefHeight="200.0" prefWidth="200.0" />
                </children></VBox>
          </children>
       </HBox>
