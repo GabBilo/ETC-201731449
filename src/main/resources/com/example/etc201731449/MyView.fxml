@@ -74,20 +74,20 @@
             <Insets left="5.0" />
          </padding>
       </Label>
-      <TextField editable="false" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+      <TextField fx:id="identification" editable="false" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets right="5.0" />
          </GridPane.margin></TextField>
-      <TextField fx:id="prenom" onKeyPressed="#getPrenom" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+      <TextField fx:id="prenom" onKeyReleased="#getPrenom" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets right="5.0" />
          </GridPane.margin></TextField>
-      <TextField fx:id="nom" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+      <TextField fx:id="nom" onKeyReleased="#getNom" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
          <GridPane.margin>
             <Insets right="5.0" />
          </GridPane.margin></TextField>
-      <DatePicker fx:id="dob" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <TextField fx:id="email" prefWidth="460.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <DatePicker fx:id="dob" onKeyReleased="#getDOB" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="email" onKeyReleased="#getEmail" prefWidth="460.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
       <ImageView fitHeight="75.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
          <image>
             <Image url="@image/email_invalid.png" />
