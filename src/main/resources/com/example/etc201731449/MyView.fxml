@@ -86,9 +86,9 @@
          <GridPane.margin>
             <Insets right="5.0" />
          </GridPane.margin></TextField>
-      <DatePicker fx:id="dob" onKeyReleased="#getDOB" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <DatePicker fx:id="dob" onKeyReleased="#getDOB" onMouseExited="#getDOBMouse" GridPane.columnIndex="1" GridPane.rowIndex="4" />
       <TextField fx:id="email" onKeyReleased="#getEmail" prefWidth="460.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-      <ImageView fitHeight="75.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+      <ImageView fx:id="imageCheck" fitHeight="75.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
          <image>
             <Image url="@image/email_invalid.png" />
          </image>
@@ -96,7 +96,7 @@
             <Insets left="5.0" />
          </GridPane.margin>
       </ImageView>
-      <Button disable="true" mnemonicParsing="false" prefHeight="26.0" prefWidth="57.0" text="Valider" GridPane.columnIndex="2" GridPane.rowIndex="7" GridPane.valignment="BOTTOM">
+      <Button fx:id="valider" disable="true" mnemonicParsing="false" onAction="#clickValider" prefHeight="26.0" prefWidth="57.0" text="Valider" GridPane.columnIndex="2" GridPane.rowIndex="7" GridPane.valignment="BOTTOM">
          <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
